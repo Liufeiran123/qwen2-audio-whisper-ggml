@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libwhisper.so.1 -o libwhisper.so.1.7.1 CMakeFiles/whisper.dir/qwen2-whisper.cpp.o  -Wl,-rpath,/mnt/d/ai/whisper.cpp.qwen2/ggml/src: ../ggml/src/libggml.so 

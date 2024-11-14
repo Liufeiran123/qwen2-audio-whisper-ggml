@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/main.dir/main.cpp.o -o ../../bin/main  -Wl,-rpath,/mnt/d/ai/whisper.cpp.qwen2/src:/mnt/d/ai/whisper.cpp.qwen2/ggml/src ../libcommon.a ../../src/libwhisper.so.1.7.1 ../../ggml/src/libggml.so 
