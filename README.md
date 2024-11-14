@@ -1,26 +1,21 @@
 # qwen2-whisper-ggml
 qwen2-audio whisper model ggml inference
 
-qwen2-audio whisper ggml推理基础设施
+qwen2-audio whisper ggml推理基础设施，业余工作记录。
 
-Quick start
-First clone the repository:
+#生成ggml格式模型
+models/convert-pt-to-ggml.py /mnt/d/ai/pretrain_models/whisper-base/base.pt /mnt/d/ai/whisper /mnt/d/ai/pretrain_models/whisper-base-ggml/
 
-git clone https://github.com/ggerganov/whisper.cpp.git
-Navigate into the directory:
 
-cd whisper.cpp
-Then, download one of the Whisper models converted in ggml format. For example:
+#编译代码
 
-sh ./models/download-ggml-model.sh base.en
-Now build the main example and transcribe an audio file like this:
-
-# build the main example
-make -j
-
-# transcribe an audio file
-./main -f samples/jfk.wav
-
-cmake -DGGML_CUDA=ON -DCMAKE_VERBOSE_MAKEFILE=ON -DWHISPER_BUILD_EXAMPLES=ON .
-
+cmake 
 make
+
+#获取whisper输出
+
+main
+
+感谢
+whisper.cpp项目
+https://github.com/ggerganov/whisper.cpp
