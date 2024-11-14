@@ -3,22 +3,31 @@ qwen2-audio whisper model ggml inference
 
 qwen2-audio whisper ggml推理基础设施，业余工作记录。
 
-# 生成ggml格式模型
+## clone代码
 ```
-models/convert-pt-to-ggml.py ./qwen2-audio-whisper.pt ./github/repos/whisper ./qwen2-audio-whisper-ggml/
+git clone 
 ```
 
-# 编译代码
+## 切换到根目录
+```
+cd qwen2-whisper-ggml
+```
+
+## 生成ggml格式模型
+```
+python ./models/convert-pt-to-ggml.py ./qwen2-audio-whisper.pt ./github/repos/whisper ./qwen2-audio-whisper-ggml/
+```
+
+## 编译代码
 
 ```
-cmake 
+cmake -DGGML_CUDA=ON -DCMAKE_VERBOSE_MAKEFILE=ON -DWHISPER_BUILD_EXAMPLES=ON .
 make
 ```
 
-# 获取whisper输出
-
+## 获取whisper输出
 ```
-main
+./bin/main -f ./samples/jfk.wav
 ```
 
 感谢
