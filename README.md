@@ -5,12 +5,12 @@ qwen2-audio whisper ggml推理基础设施，业余工作记录。
 
 ## clone代码
 ```
-git clone https://github.com/Liufeiran123/qwen2-whisper-ggml.git
+git clone https://github.com/Liufeiran123/qwen2-audio-whisper-ggml.git
 ```
 
 ## 切换到根目录
 ```
-cd qwen2-whisper-ggml
+cd qwen2-audio-whisper-ggml
 ```
 
 ## 生成ggml格式模型
