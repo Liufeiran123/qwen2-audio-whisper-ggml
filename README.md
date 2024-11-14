@@ -1,4 +1,4 @@
-# qwen2-whisper-ggml
+# qwen2-audio-whisper-ggml
 qwen2-audio whisper model ggml inference
 
 qwen2-audio whisper ggml推理基础设施，业余工作记录。
